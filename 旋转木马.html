@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        body{
+            perspective: 2800px;
+        }
+        .father{
+       transform-style: preserve-3d ;
+       position: relative;
+       margin:200px auto;
+       width: 300px;
+            height: 300px;
+       animation: move 6s linear infinite;
+    
+       
+     
+        }
+        .one{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            background: url("img/0346b8134ac23593ea53046be64547a.png");
+            background-size: 100% 100%;
+            transform: translateZ(300px)
+        }
+        .two{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+           
+             transform: rotateY(60deg) translateZ(300px);
+            background: url("img/633ef1de9099ec5745941d3509e1910.jpg");
+            background-size: 100% 100%;
+           
+
+
+        }
+        .three{
+            position: absolute;
+           transform: rotateY(120deg) translateZ(300px);
+
+            width: 300px;
+            height: 300px;
+            background: url("img/65f2851d035ecbc25b55c70cf234338.jpg");
+            background-size: 100% 100%;
+        }
+        .four{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+             transform: rotateY(180deg) translateZ(300px);
+            background: url("img/6b20579dd835203626cff11173efad4.jpg");
+            background-size: 100% 100%;
+        }
+        .fix{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+           
+            
+            transform: rotateY(240deg) translateZ(300px);
+            background: url("img/c254161d573e73c204cac4d16fc14b5.jpg");
+            background-size: 100% 100%;
+        }
+        .six{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            transform: rotateY(300deg) translateZ(300px);
+            
+            background: url("img/d0a31f462cd215cf92d21a8d4c97f15.png");
+            background-size: 100% 100%;
+        }
+        
+        @keyframes move {
+            0%{
+                transform: rotateY(0deg);
+            }
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="fix"></div>
+    <div class="six"></div>
+</div>
+</body>
+</html>
